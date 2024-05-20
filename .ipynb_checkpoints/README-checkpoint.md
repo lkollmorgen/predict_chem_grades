@@ -1,6 +1,6 @@
 # predict_chem_grades
 ### Laura Jones
-### Last updated 5.17.2024
+### Last updated 5.19.2024
 In this notebook, I explore a dataset collected from high school general chemistry students. The goal is to show students that minimal changes in their study habits, like studying for 1 more hour each week or ask more clarifying questions, will improve their grades in chemistry.<br>
 Initially, a linear regression was applied through SKLearn, but later, the project was further developed using Tensorflow's Keras API.
 
@@ -29,10 +29,9 @@ The cross-validation scores for the Linear Regression are subpar. This is likely
 Nonetheless, The final cells can be used to show students that, by asking clarifying questions and studying more, a student's grade can improve.
 
 ## Results using Tensorflow's Keras API
-- Lowest MAE for deep learning model was 14.72
-- Very stochastic results
-- Implemented folds for better result tracking with various parameters
-- Reduced batch size, which placed the Deep learning model on a level playing field with the linear model
+- Lowest MAE for deep learning model was 6.794 using a batch size of 10, 500 epochs, dropout of .3, and a wide model with two hidden layers at 1024 nodes each
+- Results changed drastically with minor changes in the batch size
+- More exploration required for other parameters
 
 ## Future Improvement
 - Collecting more features, such as 'study methods', 'attendance', 'effort during warmup activities', 'hours spent in extracurriculars', and the like
